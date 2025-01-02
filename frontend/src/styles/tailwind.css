@@ -1,0 +1,37 @@
+/* tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS for animations and transitions */
+
+/* Transition for Theme Change */
+
+/* Smooth transitions for background and text color changes */
+:root {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button Hover Effects */
+button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Modal Animations */
+.modal-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.modal-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
